@@ -34,7 +34,7 @@ jobs:
         run: dotnet build --configuration release
 
       - name: Setup nuget profile
-        run: dotnet nuget add source "https://nuget.pkg.github.com/KpiOTroianGraduate/index.json" -n "github" -u Hapan9 -p ${{ secrets.USER_PASSWORD }} --store-password-in-clear-text
+        run: dotnet nuget add source "https://nuget.pkg.github.com/KpiOTroianGraduate" -n "github" -u Hapan9 -p ${{ secrets.USER_PASSWORD }} --store-password-in-clear-text
 
       - name: Publish package
         run:
