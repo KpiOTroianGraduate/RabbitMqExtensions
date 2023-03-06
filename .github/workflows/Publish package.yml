@@ -37,6 +37,5 @@ jobs:
         run: dotnet nuget add source --username ${{ secrets.USER_NAME }} --password ${{ secrets.USER_PASSWORD }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/KpiOTroianGraduate/index.json"
 
       - name: Publish package
-        run: |
-          find . -name "*.nupkg"
-          dotnet nuget push find . -name "*.nupkg" --source "github"
+        run:
+          dotnet nuget push $(find . -name "*.nupkg") --source "github"
