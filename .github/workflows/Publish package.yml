@@ -38,5 +38,10 @@ jobs:
 
       - name: Publish package
         run: |
-          find .\bin\Release -name "*.nupkg"
-          dotnet nuget push find .\bin\Release -name "*.nupkg" --source "github"
+          find .\.\bin\Release -name "*.nupkg"
+          find .\.\bin\Release\ -name "*.nupkg"
+          find .\.\bin\Release\. -name "*.nupkg"
+          find .\.\.\bin\Release -name "*.nupkg"
+          find .\.\.\bin\Release\ -name "*.nupkg"
+          find .\.\.\bin\Release\. -name "*.nupkg"
+          dotnet nuget push (find .\.\bin\Release\ -name "*.nupkg") --source "github"
