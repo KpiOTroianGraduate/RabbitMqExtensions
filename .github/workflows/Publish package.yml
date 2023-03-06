@@ -38,4 +38,4 @@ jobs:
 
       - name: Publish package
         run:
-          dotnet nuget push $(find . -name "*.nupkg") --source "github" -k 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
+          dotnet nuget push $(find . -name "*.nupkg") --api-key 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 --source "github"
