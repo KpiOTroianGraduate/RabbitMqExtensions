@@ -11,7 +11,7 @@
     <Product>RabbitMq Extensions</Product>
     <Description>Some RabbitMQ extensions to speed up development</Description>
     <Copyright>GNU General Public License v3.0</Copyright>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/KpiOTroianGraduate/RabbitMqExtensions</PackageProjectUrl>
     <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/KpiOTroianGraduate/RabbitMqExtensions</RepositoryUrl>
     <NeutralLanguage>en</NeutralLanguage>
