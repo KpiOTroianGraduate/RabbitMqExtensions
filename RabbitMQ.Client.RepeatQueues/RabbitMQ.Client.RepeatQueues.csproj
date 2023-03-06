@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <None Remove="icon.png" />
-    <None Remove="nuget.config" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,12 +28,6 @@
 
   <ItemGroup>
     <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="nuget.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
   </ItemGroup>
 
 </Project>
