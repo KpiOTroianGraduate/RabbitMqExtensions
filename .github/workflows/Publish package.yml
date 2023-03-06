@@ -33,6 +33,9 @@ jobs:
       - name: Build package
         run: dotnet build --configuration release
 
+      - name: Setup nuget profile
+        run: dotnet nuget add source "https://nuget.pkg.github.com/KpiOTroianGraduate/index.json" -n "github" -u Hapan9 -p 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 --store-password-in-clear-text 
+
       - name: Publish package
         run:
-          dotnet nuget push $(find . -name "*.nupkg") -k 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 -s https://nuget.pkg.github.com/KpiOTroianGraduate/index.json
+          dotnet nuget push $(find . -name "*.nupkg") -s "github"
