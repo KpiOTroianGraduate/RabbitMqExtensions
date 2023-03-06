@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -38,6 +38,32 @@ jobs:
 
       - name: Publish package
         run: |
+          find . -name "*.nupkg"
+          find .\bin\Release -name "*.nupkg"
+          find .\bin\Release -name "*.nupkg"
+          find .\bin\Release -name "*.nupkg"
+          find .\.\bin\Release -name "*.nupkg"
+          find .\.\bin\Release\ -name "*.nupkg"
+          find .\.\bin\Release\. -name "*.nupkg"
+          find .\.\.\bin\Release -name "*.nupkg"
+          find .\.\.\bin\Release\ -name "*.nupkg"
+          find .\.\.\bin\Release\. -name "*.nupkg"
+          find .\.\.\.\bin\Release\. -name "*.nupkg"
+          find .\.\.\.\bin\Release\. -name "*.nupkg"
+          find .\.\.\.\bin\Release\. -name "*.nupkg"
+          find . -type "nupkg"
+          find .\bin\Release -type "nupkg"
+          find .\bin\Release -type "nupkg"
+          find .\bin\Release -type "nupkg"
+          find .\.\bin\Release -type "nupkg"
+          find .\.\bin\Release\ -type "nupkg"
+          find .\.\bin\Release\. -type "nupkg"
+          find .\.\.\bin\Release -type "nupkg"
+          find .\.\.\bin\Release\ -type "nupkg"
+          find .\.\.\bin\Release\. -type "nupkg"
+          find .\.\.\.\bin\Release\. -type "nupkg"
+          find .\.\.\.\bin\Release\. -type "nupkg"
+          find .\.\.\.\bin\Release\. -type "nupkg"
           echo readlink -f bin/Release/*.nupkg
           echo readlink -f ./bin/Release/*.nupkg
           echo readlink -f ././bin/Release/*.nupkg
