@@ -38,11 +38,13 @@ jobs:
 
       - name: Publish package
         run: |
-          readlink -f bin/Release/*.nupkg
-          readlink -f ./bin/Release/*.nupkg
-          readlink -f ././bin/Release/*.nupkg
-          readlink -f ./././bin/Release/*.nupkg
-          readlink -f ./././bin/Release/*.nupkg
-          readlink -f ./././././bin/Release/*.nupkg
-          readlink -f ././././././bin/Release/*.nupkg
+          echo readlink -f bin/Release/*.nupkg
+          echo readlink -f ./bin/Release/*.nupkg
+          echo readlink -f ././bin/Release/*.nupkg
+          echo readlink -f ./././bin/Release/*.nupkg
+          echo readlink -f ./././bin/Release/*.nupkg
+          echo readlink -f ./././././bin/Release/*.nupkg
+          echo readlink -f ././././././bin/Release/*.nupkg
+          echo locate *.nupkg
+          echo realpath -s *.nupkg
           dotnet nuget push (readlink -f bin/Release/*.nupkg) --source "github"
