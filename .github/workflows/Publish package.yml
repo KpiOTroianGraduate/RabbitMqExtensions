@@ -31,7 +31,7 @@ jobs:
             dotnet-version: 7.0.x
 
       - name: Build package
-        run: dotnet build --configuration release
+        run: dotnet build --configuration release -p:PackageRequireLicenseAcceptance=false -p:RepositoryType=git
 
       - name: Setup nuget profile
         run: dotnet nuget add source "https://nuget.pkg.github.com/KpiOTroianGraduate" -n "github" -u Hapan9 -p ${{ secrets.USER_PASSWORD }} --store-password-in-clear-text
