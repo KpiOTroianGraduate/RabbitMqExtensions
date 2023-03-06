@@ -39,38 +39,4 @@ jobs:
       - name: Publish package
         run: |
           find . -name "*.nupkg"
-          find ./bin/Release -name "*.nupkg"
-          find ./bin/Release -name "*.nupkg"
-          find ./bin/Release -name "*.nupkg"
-          find ././bin/Release -name "*.nupkg"
-          find ././bin/Release/ -name "*.nupkg"
-          find ././bin/Release/. -name "*.nupkg"
-          find ./././bin/Release -name "*.nupkg"
-          find ./././bin/Release/ -name "*.nupkg"
-          find ./././bin/Release/. -name "*.nupkg"
-          find ././././bin/Release/. -name "*.nupkg"
-          find ././././bin/Release/. -name "*.nupkg"
-          find ././././bin/Release/. -name "*.nupkg"
-          find . -type "nupkg"
-          find ./bin/Release -type "nupkg"
-          find ./bin/Release -type "nupkg"
-          find ./bin/Release -type "nupkg"
-          find ././bin/Release -type "nupkg"
-          find ././bin/Release/ -type "nupkg"
-          find ././bin/Release/. -type "nupkg"
-          find ./././bin/Release -type "nupkg"
-          find ./././bin/Release/ -type "nupkg"
-          find ./././bin/Release/. -type "nupkg"
-          find ././././bin/Release/. -type "nupkg"
-          find ././././bin/Release/. -type "nupkg"
-          find ././././bin/Release/. -type "nupkg"
-          echo readlink -f bin/Release/*.nupkg
-          echo readlink -f ./bin/Release/*.nupkg
-          echo readlink -f ././bin/Release/*.nupkg
-          echo readlink -f ./././bin/Release/*.nupkg
-          echo readlink -f ./././bin/Release/*.nupkg
-          echo readlink -f ./././././bin/Release/*.nupkg
-          echo readlink -f ././././././bin/Release/*.nupkg
-          echo locate *.nupkg
-          echo realpath -s *.nupkg
-          dotnet nuget push (readlink -f bin/Release/*.nupkg) --source "github"
+          dotnet nuget push (find . -name "*.nupkg") --source "github"
