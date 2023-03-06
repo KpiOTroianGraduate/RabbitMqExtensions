@@ -38,17 +38,11 @@ jobs:
 
       - name: Publish package
         run: |
-          find . -type "nupkg"
-          find .\bin\Release -type "nupkg"
-          find .\bin\Release -type "nupkg"
-          find .\bin\Release -type "nupkg"
-          find .\.\bin\Release -type "nupkg"
-          find .\.\bin\Release\ -type "nupkg"
-          find .\.\bin\Release\. -type "nupkg"
-          find .\.\.\bin\Release -type "nupkg"
-          find .\.\.\bin\Release\ -type "nupkg"
-          find .\.\.\bin\Release\. -type "nupkg"
-          find .\.\.\.\bin\Release\. -type "nupkg"
-          find .\.\.\.\bin\Release\. -type "nupkg"
-          find .\.\.\.\bin\Release\. -type "nupkg"
-          dotnet nuget push (find .\.\bin\Release\ -type "nupkg") --source "github"
+          readlink -f bin\Release\*.nupkg
+          readlink -f .\bin\Release\*.nupkg
+          readlink -f .\.\bin\Release\*.nupkg
+          readlink -f .\.\.\bin\Release\*.nupkg
+          readlink -f .\.\.\bin\Release\*.nupkg
+          readlink -f .\.\.\.\.\bin\Release\*.nupkg
+          readlink -f .\.\.\.\.\.\bin\Release\*.nupkg
+          dotnet nuget push (readlink -f bin\Release\*.nupkg) --source "github"
