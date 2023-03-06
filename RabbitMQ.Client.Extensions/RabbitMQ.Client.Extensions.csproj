@@ -15,7 +15,9 @@
     <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/KpiOTroianGraduate/RabbitMqExtensions</RepositoryUrl>
     <NeutralLanguage>en</NeutralLanguage>
-    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <AssemblyVersion></AssemblyVersion>
+    <FileVersion></FileVersion>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
