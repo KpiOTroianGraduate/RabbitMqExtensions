@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -9,25 +9,18 @@
     <Authors>Hapan9</Authors>
     <Company />
     <Product>RabbitMq Extensions</Product>
-    <Description>Some RabbitMQ extensions to speed up development</Description>
-    <Copyright>GNU General Public License v3.0</Copyright>
+    <Description>RabbitMQ extensions to speed up development</Description>
     <PackageProjectUrl>https://github.com/KpiOTroianGraduate/RabbitMqExtensions</PackageProjectUrl>
-    <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/KpiOTroianGraduate/RabbitMqExtensions</RepositoryUrl>
     <NeutralLanguage>en</NeutralLanguage>
     <AssemblyVersion></AssemblyVersion>
     <FileVersion></FileVersion>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
+    <PackageIcon>logo.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="logo.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
