@@ -15,13 +15,9 @@
     <NeutralLanguage>en</NeutralLanguage>
     <AssemblyVersion></AssemblyVersion>
     <FileVersion></FileVersion>
-    <Version>1.2.1</Version>
+    <Version>1.2.2</Version>
     <PackageIcon>logo.png</PackageIcon>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="logo.png" />
-  </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="logo.png">
@@ -32,6 +28,13 @@
 
   <ItemGroup>
     <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
