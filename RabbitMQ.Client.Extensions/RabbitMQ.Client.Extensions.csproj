@@ -15,7 +15,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <AssemblyVersion></AssemblyVersion>
     <FileVersion></FileVersion>
-    <Version>1.2.2</Version>
+    <Version>1.2.3</Version>
     <PackageIcon>logo.png</PackageIcon>
   </PropertyGroup>
 
@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="logo.png">
+    <None Include="logo.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
