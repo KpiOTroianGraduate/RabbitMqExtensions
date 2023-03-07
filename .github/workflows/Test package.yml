@@ -57,8 +57,12 @@ jobs:
           name: 'Test Run'
           path: ${{github.workspace}}/${{env.file_name}}
 
+
+      - name: PR Comment from File
+        uses: machine-learning-apps/pr-comment@1.0.0
+
       # add report as PR comment (if PR)
-      - name: comment PR
+      - name: Comment PR
         uses: machine-learning-apps/pr-comment@master
         if: ${{ github.event_name == 'pull_request' }}
         env:
