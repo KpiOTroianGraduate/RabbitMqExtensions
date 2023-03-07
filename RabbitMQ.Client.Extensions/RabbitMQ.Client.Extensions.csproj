@@ -17,6 +17,7 @@
     <FileVersion></FileVersion>
     <Version>1.2.3</Version>
     <PackageIcon>logo.png</PackageIcon>
+    <PackageIconUrl>https://github.com/KpiOTroianGraduate/RabbitMqExtensions/blob/develop/RabbitMQ.Client.Extensions/logo.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
