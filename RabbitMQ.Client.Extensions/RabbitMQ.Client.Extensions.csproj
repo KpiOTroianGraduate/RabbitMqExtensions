@@ -15,7 +15,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <AssemblyVersion></AssemblyVersion>
     <FileVersion></FileVersion>
-    <Version>1.2.1</Version>
+    <Version>1.2.2</Version>
     <PackageIcon>logo.png</PackageIcon>
   </PropertyGroup>
 
